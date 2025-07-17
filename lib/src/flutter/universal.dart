@@ -732,7 +732,8 @@ class VxUniversal extends StatelessWidget {
 
   Widget cardWidget(Widget current, BuildContext context) {
     final ThemeData theme = Theme.of(context);
-    final CardTheme cardTheme = CardTheme.of(context);
+    //final CardTheme cardTheme = CardTheme.of(context);
+    final cardTheme = Theme.of(context).cardTheme;
     return material(current,
         mType: MaterialType.card,
         mShadowColor: shadowColor ?? cardTheme.shadowColor ?? theme.shadowColor,
